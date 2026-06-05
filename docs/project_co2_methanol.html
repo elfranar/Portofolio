@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CO2 to Methanol Reactor Project — Process Engineering, AutoCAD, ASPEN HYSYS. Elfrana De Ridwan, BRIN C-Refinery Group." />
+  <title>CO₂ → Methanol Reactor | Elfrana De Ridwan</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+<body>
+
+<!-- ── NAVBAR ─────────────────────────────────── -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">EDR<span class="text-accent">.</span></a>
+    <div class="ms-auto">
+      <a href="index.html" class="btn-back"><i class="bi bi-arrow-left me-1"></i>Back to Portfolio</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── PROJECT HEADER ─────────────────────────── -->
+<section class="project-hero">
+  <div class="container" style="max-width:960px;">
+    <p class="label-tag mb-2">BRIN Research · C-Refinery Group · 2026</p>
+    <h1 class="proj-hero-title">CO₂ to Methanol<br>Reactor Project</h1>
+    <p class="proj-hero-sub">Designed &middot; Analyzed &middot; Evaluated</p>
+
+    <!-- Meta strip -->
+    <div class="meta-strip row g-0 mt-4">
+      <div class="col-6 col-md-3 meta-cell">
+        <div class="meta-key">Role</div>
+        <div class="meta-val">Research Intern</div>
+      </div>
+      <div class="col-6 col-md-3 meta-cell">
+        <div class="meta-key">Institution</div>
+        <div class="meta-val">BRIN / Universitas Indonesia</div>
+      </div>
+      <div class="col-6 col-md-3 meta-cell">
+        <div class="meta-key">Timeline</div>
+        <div class="meta-val">Feb 2026 – Present</div>
+      </div>
+      <div class="col-6 col-md-3 meta-cell" style="border:none">
+        <div class="meta-key">Tools Used</div>
+        <div class="meta-val">AutoCAD · ASPEN · Excel</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container py-5" style="max-width:960px;">
+
+  <!-- ── 1. PROCESS FLOW DIAGRAM ──────────────── -->
+  <section class="proj-section">
+    <div class="section-label"><span>01</span> Process Flow Diagram</div>
+    <div class="img-frame">
+      <img src="static/images/flow_diagram.png" alt="PFD" class="img-fluid">
+    </div>
+    <p class="img-caption">Fig. 1 — Drafted PFD: CO₂ Hydrogenation to Methanol · Dual-Bed Configuration · P = 75 bar</p>
+
+    <ul class="eng-list mt-3">
+      <li>Feed: <strong>CO₂ (100 kg/hr)</strong> + <strong>H₂ (13.8 kg/hr)</strong> at molar ratio H₂:CO₂ = 3:1, compressed to <strong>75 bar</strong></li>
+      <li>Inlet gas preheated to <strong>220 °C</strong> via feed-effluent heat exchanger (HEX area = 120 m²)</li>
+      <li>Dual-bed configuration with interstage cooling at <strong>≤ 210 °C</strong> — sustains equilibrium-limited conversion beyond single-pass limits</li>
+      <li>HP flash separator recovers crude methanol (<strong>~64 wt%</strong>); unreacted gases recycled at recycle ratio <strong>R = 4.2</strong></li>
+      <li>Overall carbon utilization: <strong>&gt; 95%</strong> achieved through closed recycle loop integration</li>
+    </ul>
+  </section>
+
+  <!-- ── 2. ENGINEERING ANALYSIS ──────────────── -->
+  <section class="proj-section">
+    <div class="section-label"><span>02</span> Engineering Analysis</div>
+
+    <div class="row g-3">
+      <!-- Mass balance -->
+      <div class="col-md-4">
+        <div class="ana-card h-100">
+          <div class="ana-card-title"><i class="bi bi-bar-chart-line-fill me-2"></i>Mass Balance</div>
+          <table class="ana-table">
+            <tr><td>CO₂ in</td><td class="text-end fw-600">100.0 kg/hr</td></tr>
+            <tr><td>H₂ in</td><td class="text-end fw-600">13.8 kg/hr</td></tr>
+            <tr><td>Recycle stream</td><td class="text-end fw-600">315.2 kg/hr</td></tr>
+            <tr><td>MeOH out</td><td class="text-end fw-600">72.7 kg/hr</td></tr>
+            <tr><td>H₂O out</td><td class="text-end fw-600">40.9 kg/hr</td></tr>
+            <tr class="highlight-row"><td>η<sub>C</sub></td><td class="text-end fw-600">&gt; 95%</td></tr>
+          </table>
+        </div>
+      </div>
+      <!-- Flow calc -->
+      <div class="col-md-4">
+        <div class="ana-card h-100">
+          <div class="ana-card-title"><i class="bi bi-wind me-2"></i>Flow Calculation</div>
+          <table class="ana-table">
+            <tr><td>Q (STP)</td><td class="text-end fw-600">1,200 m³/hr</td></tr>
+            <tr><td>GHSV</td><td class="text-end fw-600">5,000 h⁻¹</td></tr>
+            <tr><td>Tube velocity</td><td class="text-end fw-600">3.2 m/s</td></tr>
+            <tr><td>ΔP (tubes)</td><td class="text-end fw-600">≤ 1.5 bar</td></tr>
+            <tr><td>HEX area</td><td class="text-end fw-600">120.0 m²</td></tr>
+          </table>
+        </div>
+      </div>
+      <!-- Key parameters -->
+      <div class="col-md-4">
+        <div class="ana-card h-100">
+          <div class="ana-card-title"><i class="bi bi-sliders me-2"></i>Key Parameters</div>
+          <table class="ana-table">
+            <tr><td>Pressure</td><td class="text-end fw-600">75 bar</td></tr>
+            <tr><td>T inlet</td><td class="text-end fw-600">220 °C</td></tr>
+            <tr><td>T hotspot (max)</td><td class="text-end fw-600">260 °C</td></tr>
+            <tr><td>X<sub>CO₂</sub>/pass</td><td class="text-end fw-600">~25%</td></tr>
+            <tr><td>Recycle ratio R</td><td class="text-end fw-600">4.2</td></tr>
+            <tr class="highlight-row"><td>ΔH<sub>rxn</sub></td><td class="text-end fw-600">−49.5 kJ/mol</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 3. REACTOR DESIGN ─────────────────────── -->
+  <section class="proj-section">
+    <div class="section-label"><span>03</span> Reactor Design</div>
+
+    <div class="row g-4 align-items-start">
+      <div class="col-md-5">
+        <div class="img-frame">
+          <img src="static/images/reactor_design.png" alt="AutoCAD Reactor" class="img-fluid">
+        </div>
+        <p class="img-caption">Fig. 2 — AutoCAD Cross-Section: Dual-Bed Tubular Reactor Vessel</p>
+      </div>
+      <div class="col-md-7">
+        <table class="design-table w-100">
+          <tr><th>Reactor Type</th><td>Dual-Bed Fixed Bed Tubular (Shell-and-Tube)</td></tr>
+          <tr><th>Operating T</th><td>210–250 °C · interstage cooling ≤ 210 °C</td></tr>
+          <tr><th>Operating P</th><td>75 bar</td></tr>
+          <tr><th>Catalyst</th><td>Cu/ZnO/Al₂O₃ · pellets 3 mm × 3 mm</td></tr>
+          <tr><th>No. of Tubes</th><td>680 tubes · OD 38 mm · L 3.5 m</td></tr>
+          <tr><th>Shell ID</th><td>1,200 mm · wall thickness 45 mm</td></tr>
+          <tr><th>Catalyst load</th><td>1.2 T total charge</td></tr>
+          <tr><th>Shell material</th><td>SS316L (75 bar ASME service)</td></tr>
+        </table>
+        <div class="design-rationale mt-3">
+          <strong>Design Rationale:</strong> Multi-tubular shell-and-tube configuration selected for maximized heat-transfer surface area to remove continuous exothermic load (ΔH = −49.5 kJ/mol). Boiling-water shell side generates LP process steam. Dual-bed interstage cooling prevents catalyst sintering (T<sub>sinter</sub> &gt; 280 °C) and pushes conversion beyond single-pass thermodynamic limits.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 4. CAD & DRAWINGS ─────────────────────── -->
+  <section class="proj-section">
+    <div class="section-label"><span>04</span> CAD &amp; Drawings</div>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="gallery-wrap">
+          <img src="static/images/reactor_design.png" alt="AutoCAD Reactor" class="gallery-img">
+          <div class="gallery-cap">AutoCAD — Reactor Vessel Cross-Section</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="gallery-wrap">
+          <img src="static/images/aspen_simulation.png" alt="ASPEN Simulation" class="gallery-img">
+          <div class="gallery-cap">ASPEN HYSYS — Process Simulation</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="gallery-wrap">
+          <img src="static/images/flow_diagram.png" alt="PFD" class="gallery-img">
+          <div class="gallery-cap">AutoCAD — Process Flow Diagram (PFD)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 5. BILL OF MATERIALS ──────────────────── -->
+  <section class="proj-section">
+    <div class="section-label"><span>05</span> Material &amp; Bill of Materials (BOM)</div>
+    <div class="table-responsive">
+      <table class="table bom-table">
+        <thead>
+          <tr>
+            <th>#</th><th>Component</th><th>Material</th><th>Qty</th><th>Specification</th><th>Function</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Reactor Shell</td>
+            <td>SS316L</td>
+            <td>1</td>
+            <td>ID 1,200 mm · t 45 mm · L 5,500 mm</td>
+            <td>High-pressure containment (75 bar)</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Catalyst Tubes</td>
+            <td>SS316L</td>
+            <td>680</td>
+            <td>OD 38 mm · t 3 mm · L 3,500 mm</td>
+            <td>Catalyst bed &amp; heat-transfer surface</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Catalyst Charge</td>
+            <td>Cu/ZnO/Al₂O₃</td>
+            <td>1.2 T</td>
+            <td>Cylinder 3 mm × 3 mm pellets</td>
+            <td>Active phase — CO₂ hydrogenation</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Tube Sheets</td>
+            <td>CS + SS316 clad</td>
+            <td>2</td>
+            <td>Ø 1,400 mm · t 80 mm</td>
+            <td>Tube bundle retention &amp; sealing</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Shell-side Jacket</td>
+            <td>A516 Gr.70 CS</td>
+            <td>1</td>
+            <td>Ø 1,500 mm · insulation 50 mm</td>
+            <td>Boiling-water coolant loop</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Transverse Baffles</td>
+            <td>Carbon Steel A36</td>
+            <td>6</td>
+            <td>Ø 1,400 mm · cut 25% segmental</td>
+            <td>Shell-side flow distribution &amp; tube support</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>HP Flash Separator</td>
+            <td>SS316</td>
+            <td>1</td>
+            <td>ID 800 mm · t 35 mm · H 2,200 mm</td>
+            <td>Liquid-gas separation — crude MeOH recovery</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ── 6. REFLECTION ─────────────────────────── -->
+  <section class="proj-section" style="border:none; padding-bottom:2rem;">
+    <div class="section-label"><span>06</span> Project Reflection</div>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="reflect-card h-100">
+          <div class="reflect-icon"><i class="bi bi-lightbulb-fill"></i></div>
+          <h6 class="reflect-title">What I Learned</h6>
+          <p class="reflect-text">
+            Designed and evaluated a full CCU reactor system end-to-end — from reaction stoichiometry and steady-state mass balances through AutoCAD PFD drafting and high-pressure SOP authoring. Bridged kinetic modeling with physical equipment sizing; developed deep understanding of heat-transfer constraints in exothermic catalytic systems.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="reflect-card h-100">
+          <div class="reflect-icon"><i class="bi bi-exclamation-triangle-fill"></i></div>
+          <h6 class="reflect-title">Limitations</h6>
+          <p class="reflect-text">
+            All process parameters were derived from steady-state computational models and peer-reviewed kinetic correlations. Physical bench-scale validation — including real catalyst activity profiling, hotspot temperature measurement, and gas flow distribution — remains to be conducted prior to pilot-scale consideration.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="reflect-card h-100">
+          <div class="reflect-icon"><i class="bi bi-arrow-up-right-circle-fill"></i></div>
+          <h6 class="reflect-title">Next Steps</h6>
+          <ul class="eng-list small">
+            <li><strong>Dynamic simulation</strong> in ASPEN HYSYS for transient start-up &amp; feed fluctuations</li>
+            <li><strong>Micro-reactor bench test</strong> to calibrate modeled vs. experimental kinetic constants</li>
+            <li><strong>CFD analysis</strong> of radial temperature profiles &amp; tube-side velocity distribution</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /container -->
+
+<footer class="site-footer py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2" style="max-width:960px;">
+    <span class="fw-600" style="color:var(--accent)">EDR<span style="color:var(--txt-muted)">.</span></span>
+    <span class="small txt-muted">Elfrana De Ridwan &copy; 2026</span>
+    <div class="d-flex gap-3">
+      <a href="mailto:elfrana.de@ui.ac.id" class="footer-link"><i class="bi bi-envelope-fill"></i></a>
+      <a href="https://www.linkedin.com/in/elfrana-de-ridwan-ba3712145" target="_blank" class="footer-link"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/elfranar" target="_blank" class="footer-link"><i class="bi bi-github"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="static/js/main.js"></script>
+</body>
+</html>
