@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Elfrana De Ridwan — Chemical & Process Engineering Portfolio. Chemistry Undergraduate, Universitas Indonesia." />
-  <title>Elfrana De Ridwan | Engineering Portfolio</title>
+  <meta name="description" content="Elfrana De Ridwan — Process Engineering Portfolio. Chemistry student at Universitas Indonesia." />
+  <title>Elfrana De Ridwan | Portfolio</title>
 
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
     <div class="collapse navbar-collapse" id="navLinks">
       <ul class="navbar-nav ms-auto gap-2">
         <li class="nav-item"><a class="nav-link" href="#hero">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Project</a></li>
         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
@@ -35,12 +35,12 @@
   </div>
 </nav>
 
-<!-- ── SECTION 1: HERO & ABOUT ME ───────────────── -->
+<!-- ── SECTION 1: ABOUT ME ──────────────────────── -->
 <section id="hero" class="section-hero">
   <div class="container">
     <div class="row align-items-center g-5">
 
-      <!-- Photo & Contacts -->
+      <!-- Photo & Contact Pills -->
       <div class="col-lg-3 col-md-4 text-center">
         <div class="photo-ring mx-auto">
           <img src="static/images/profile.png" alt="Elfrana De Ridwan" class="img-fluid rounded-circle">
@@ -71,10 +71,10 @@
 
         <div class="bio-content">
           <p class="bio">
-            As a Chemistry undergraduate at Universitas Indonesia, my academic path has always been driven by a fascination with molecular transformations. However, my perspective shifted profoundly during my research internship at **BRIN (National Research and Innovation Agency) with the C-Refinery Group**. 
+            I am currently a Chemistry student at Universitas Indonesia. My interest in chemistry initially focused on molecular analysis, but everything changed during my research internship at the National Research and Innovation Agency (BRIN) with the C-Refinery Group.
           </p>
           <p class="bio">
-            Working directly at BRIN helped me bridge the gap between laboratory bench-scale chemistry and industrial-scale plant applications. It sparked my deep interest in **Process Engineering**, motivating me to learn how to design, simulate, and optimize large-scale chemical reactors and process flows to solve real-world environmental and energy challenges.
+            Working directly at BRIN helped me bridge the gap between laboratory chemistry and the actual scaling up of industrial processes. It sparked a real interest in process engineering—especially reactor design, process flow sheets, and system optimization to address real-world carbon capture and utilization (CCU) challenges.
           </p>
         </div>
       </div>
@@ -82,230 +82,61 @@
   </div>
 </section>
 
-<!-- ── SECTION 2: FEATURED PROJECT ──────────────── -->
-<section id="project" class="py-5 section-alt border-top">
+<!-- ── SECTION 2: PROJECTS ──────────────────────── -->
+<section id="projects" class="py-5 section-alt border-top">
   <div class="container" style="max-width: 1000px;">
-    <p class="label-tag mb-1">Featured Project</p>
-    <h2 class="section-title mb-4">CO₂ to Methanol Reactor Project</h2>
+    <p class="label-tag mb-1">My Projects</p>
+    <h2 class="section-title mb-4">Featured Work</h2>
 
-    <!-- 2.1 Process Overview -->
-    <div class="project-subsection mb-5">
-      <h4 class="sub-title"><i class="bi bi-diagram-3-fill me-2 text-accent"></i>01. Process Overview</h4>
-      <div class="row g-4 mt-2">
-        <div class="col-lg-6">
-          <div class="img-frame">
-            <img src="static/images/flow_diagram.png" alt="AutoCAD PFD" class="img-fluid">
+    <div class="row g-4">
+      <div class="col-lg-12">
+        <div class="project-card">
+          <div class="project-tag">BRIN Research Project &middot; C-Refinery Group</div>
+          <h3 class="project-title" style="font-size: 1.6rem;">CO₂ to Methanol Reactor Project</h3>
+          <p class="project-desc" style="font-size: 0.98rem; line-height: 1.8;">
+            I worked on designing a dual-bed fixed bed tubular reactor system to convert carbon dioxide into methanol. This project involved calculating mass balances, evaluating reaction rates and catalyst kinetics, and drafting the process flow diagrams using AutoCAD.
+          </p>
+
+          <div class="spec-row">
+            <div class="spec-item">
+              <span class="spec-val">1,200 m³/hr</span>
+              <span class="spec-lbl">Feed Flow (STP)</span>
+            </div>
+            <div class="spec-divider"></div>
+            <div class="spec-item">
+              <span class="spec-val">75 bar</span>
+              <span class="spec-lbl">Operating Pressure</span>
+            </div>
+            <div class="spec-divider"></div>
+            <div class="spec-item">
+              <span class="spec-val">220–260 °C</span>
+              <span class="spec-lbl">Operating Temp</span>
+            </div>
+            <div class="spec-divider"></div>
+            <div class="spec-item">
+              <span class="spec-val">&gt;95%</span>
+              <span class="spec-lbl">Carbon Conversion</span>
+            </div>
           </div>
-          <p class="img-caption">Fig. 1 — AutoCAD Process Flow Diagram (PFD) for CO₂ Hydrogenation</p>
-        </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <ul class="eng-list">
-            <li><strong>Feed Compression:</strong> Inlet feed consists of pure CO₂ (100 kg/hr) and H₂ (13.8 kg/hr) mixed at a 3:1 stoichiometric ratio, compressed to a system pressure of <strong>75 bar</strong>.</li>
-            <li><strong>Thermal Integration:</strong> The cold reactant gas is preheated to the reaction temp of <strong>220 °C</strong> through a feed-effluent heat exchanger utilizing the high-temperature product stream.</li>
-            <li><strong>Reaction System:</strong> Catalytic conversion takes place in a multi-tubular reactor. A dual-bed configuration with interstage cooling keeps temperatures at <strong>≤ 210 °C</strong> to sustain equilibrium conversion.</li>
-            <li><strong>Separation & Recycle:</strong> Crude liquid methanol (~64 wt% purity) is separated in a high-pressure flash separator. Unreacted gases are redirected through a recycle loop at a recycle ratio of <strong>R = 4.2</strong>.</li>
-          </ul>
+
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <span class="tech-badge">AutoCAD</span>
+            <span class="tech-badge">ASPEN HYSYS</span>
+            <span class="tech-badge">Kinetic Sizing</span>
+            <span class="tech-badge">Cu/ZnO/Al₂O₃</span>
+          </div>
+
+          <a href="project_co2_methanol.html" class="btn-primary-custom">
+            View Full Engineering Analysis &amp; Drawings <i class="bi bi-arrow-right ms-1"></i>
+          </a>
         </div>
       </div>
     </div>
-
-    <!-- 2.2 Engineering Analysis -->
-    <div class="project-subsection mb-5">
-      <h4 class="sub-title"><i class="bi bi-calculator-fill me-2 text-accent"></i>02. Engineering Analysis</h4>
-      <div class="row g-3 mt-2">
-        <div class="col-md-4">
-          <div class="ana-card h-100">
-            <div class="ana-card-title">Mass Balance Summary</div>
-            <ul class="bullet-list-custom">
-              <li><strong>CO₂ Inlet:</strong> 100.0 kg/hr</li>
-              <li><strong>H₂ Inlet:</strong> 13.8 kg/hr</li>
-              <li><strong>Recycle Flow:</strong> 315.2 kg/hr</li>
-              <li><strong>Crude Methanol:</strong> 72.7 kg/hr</li>
-              <li><strong>Water Byproduct:</strong> 40.9 kg/hr</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="ana-card h-100">
-            <div class="ana-card-title">Flow Rate Metrics</div>
-            <ul class="bullet-list-custom">
-              <li><strong>Design GHSV:</strong> 5,000 h⁻¹</li>
-              <li><strong>Volumetric Flow (STP):</strong> 1,200 m³/hr</li>
-              <li><strong>Reactor Tube Velocity:</strong> 3.2 m/s</li>
-              <li><strong>Target Tube ΔP:</strong> ≤ 1.5 bar</li>
-              <li><strong>Heat Exchange Area:</strong> 120.0 m²</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="ana-card h-100">
-            <div class="ana-card-title">Conversion Assumptions</div>
-            <ul class="bullet-list-custom">
-              <li><strong>Single-Pass Conversion:</strong> ~25% CO₂</li>
-              <li><strong>Overall Carbon Conversion:</strong> &gt;95%</li>
-              <li><strong>Operating T Range:</strong> 210 – 260 °C</li>
-              <li><strong>Reaction Exotherm (ΔH):</strong> −49.5 kJ/mol</li>
-              <li><strong>Recycle Ratio (R):</strong> 4.2</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 2.3 Reactor Design Insight -->
-    <div class="project-subsection mb-5">
-      <h4 class="sub-title"><i class="bi bi-nut-fill me-2 text-accent"></i>03. Reactor Design Insight</h4>
-      <div class="row g-4 mt-2">
-        <div class="col-lg-5">
-          <div class="img-frame">
-            <img src="static/images/reactor_design.png" alt="Reactor Design Blueprint" class="img-fluid">
-          </div>
-          <p class="img-caption">Fig. 2 — AutoCAD Reactor Cross-Section Drawing</p>
-        </div>
-        <div class="col-lg-7">
-          <table class="design-table w-100">
-            <tr><th>Reactor Type</th><td>Dual-Bed Fixed Bed Tubular (Shell-and-Tube)</td></tr>
-            <tr><th>Operating Pressure</th><td>75 bar</td></tr>
-            <tr><th>Temperature Profile</th><td>Inlet: 220 °C | Hotspot: max 260 °C</td></tr>
-            <tr><th>Catalyst Specs</th><td>Cu/ZnO/Al₂O₃ | 3 mm × 3 mm cylindrical pellets</td></tr>
-            <tr><th>Tube Sizing</th><td>680 tubes | Outer Diameter: 38 mm | Length: 3.5 m</td></tr>
-            <tr><th>Total Catalyst Load</th><td>1.2 Metric Tons</td></tr>
-          </table>
-          <div class="design-rationale mt-3">
-            <strong>Design Selection Rationale:</strong> A multi-tubular configuration was selected to maximize the heat-transfer surface area, allowing efficient removal of the reaction heat (ΔH = −49.5 kJ/mol) via boiling water on the shell side. A dual-bed system with interstage cooling is utilized to prevent catalyst sintering (which occurs above 280 °C) and bypass thermodynamic equilibrium limitations to increase conversion.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 2.4 Material & Safety Consideration -->
-    <div class="project-subsection mb-5">
-      <h4 class="sub-title"><i class="bi bi-shield-fill-check me-2 text-accent"></i>04. Material &amp; Safety Consideration</h4>
-      <div class="row g-3 mt-2">
-        <div class="col-md-6">
-          <div class="safety-card h-100">
-            <div class="safety-card-title"><i class="bi bi-tools text-accent me-2"></i>Material Selection</div>
-            <ul class="eng-list small">
-              <li><strong>SS316L (Reactor Shell &amp; Tubes):</strong> Selected for high-pressure containment (75 bar) because it offers superior resistance to hydrogen embrittlement and carbonic acid corrosion from wet CO₂.</li>
-              <li><strong>Carbon Steel A516 Gr.70 (Jacket):</strong> Selected for the outer cooling jacket shell to reduce material costs while safely containing low-pressure boiling water.</li>
-              <li><strong>SS316 clad Carbon Steel (Tube Sheets):</strong> Combines mechanical structural strength with corrosion resistance at tube joints.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="safety-card h-100">
-            <div class="safety-card-title"><i class="bi bi-exclamation-triangle-fill text-accent me-2"></i>Leak Prevention &amp; Safety</div>
-            <ul class="eng-list small">
-              <li><strong>Double-Welded Tube Sheets:</strong> Prevents bypass leaks between high-pressure process gas inside the tubes and shell-side coolant.</li>
-              <li><strong>Thermal Expansion Bellows:</strong> Integrated on the shell to absorb stress from temperature cycles (210–260 °C) and prevent stress-corrosion cracking.</li>
-              <li><strong>Pressure Relief Valves (PRVs):</strong> Installed on the reactor inlet and separator gas output to vent pressure in case of runaway reactions or blockages.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 2.5 CAD & Engineering Drawings -->
-    <div class="project-subsection mb-5">
-      <h4 class="sub-title"><i class="bi bi-images me-2 text-accent"></i>05. CAD &amp; Drawings Gallery</h4>
-      <div class="row g-3 mt-2">
-        <div class="col-md-4">
-          <div class="gallery-wrap">
-            <img src="static/images/flow_diagram.png" alt="PFD" class="gallery-img">
-            <div class="gallery-cap">AutoCAD — Process Flow Diagram</div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="gallery-wrap">
-            <img src="static/images/reactor_design.png" alt="Reactor Design" class="gallery-img">
-            <div class="gallery-cap">AutoCAD — Reactor Vessel Design</div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="gallery-wrap">
-            <img src="static/images/aspen_simulation.png" alt="ASPEN HYSYS" class="gallery-img">
-            <div class="gallery-cap">ASPEN HYSYS — Plant Simulation Model</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 2.6 Bill of Materials -->
-    <div class="project-subsection mb-5">
-      <h4 class="sub-title"><i class="bi bi-list-task me-2 text-accent"></i>06. Bill of Materials (BOM)</h4>
-      <div class="table-responsive mt-2">
-        <table class="table bom-table">
-          <thead>
-            <tr>
-              <th>#</th><th>Component</th><th>Material</th><th>Qty</th><th>Specification</th><th>Function</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td><td>Reactor Shell</td><td>SS316L</td><td>1</td><td>ID 1,200 mm &middot; t 45 mm &middot; L 5,500 mm</td><td>High-pressure containment (75 bar)</td>
-            </tr>
-            <tr>
-              <td>2</td><td>Catalyst Tubes</td><td>SS316L</td><td>680</td><td>OD 38 mm &middot; t 3 mm &middot; L 3,500 mm</td><td>Catalyst bed &amp; heat-transfer surface</td>
-            </tr>
-            <tr>
-              <td>3</td><td>Catalyst Charge</td><td>Cu/ZnO/Al₂O₃</td><td>1.2 T</td><td>Cylindrical 3 mm &times; 3 mm pellets</td><td>CO₂ hydrogenation reaction site</td>
-            </tr>
-            <tr>
-              <td>4</td><td>Tube Sheets</td><td>CS + SS316 clad</td><td>2</td><td>Ø 1,400 mm &middot; t 80 mm</td><td>Tube bundle sealing &amp; retention</td>
-            </tr>
-            <tr>
-              <td>5</td><td>Cooling Jacket</td><td>A516 Gr.70 CS</td><td>1</td><td>Ø 1,500 mm &middot; insulation 50 mm</td><td>Boiling-water coolant loop</td>
-            </tr>
-            <tr>
-              <td>6</td><td>Transverse Baffles</td><td>CS A36</td><td>6</td><td>Ø 1,400 mm &middot; 25% segmental cut</td><td>Shell-side flow routing &amp; support</td>
-            </tr>
-            <tr>
-              <td>7</td><td>HP Separator</td><td>SS316</td><td>1</td><td>ID 800 mm &middot; t 35 mm &middot; H 2,200 mm</td><td>Methanol condensation &amp; phase separation</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- 2.7 Reflection & Improvement -->
-    <div class="project-subsection">
-      <h4 class="sub-title"><i class="bi bi-arrow-repeat me-2 text-accent"></i>07. Reflection &amp; Improvement</h4>
-      <div class="row g-3 mt-2">
-        <div class="col-md-4">
-          <div class="reflect-card h-100">
-            <div class="reflect-icon"><i class="bi bi-lightbulb-fill"></i></div>
-            <h6 class="reflect-title">What I Learned</h6>
-            <p class="reflect-text">
-              Gained comprehensive experience designing an industrial-scale reactor system end-to-end. I learned how to translate theoretical reaction kinetics and mass balances into mechanical AutoCAD equipment designs, developing a deep understanding of thermal management limitations in highly exothermic catalytic operations.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="reflect-card h-100">
-            <div class="reflect-icon"><i class="bi bi-exclamation-triangle-fill"></i></div>
-            <h6 class="reflect-title">Limitations</h6>
-            <p class="reflect-text">
-              The project's design and operating parameters are strictly modeled under ideal, steady-state simulations using literature kinetic rate constants. Real-world catalyst decay, localized hot-spots, and flow distribution abnormalities inside the tubes can only be verified with physical laboratory scale validation.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="reflect-card h-100">
-            <div class="reflect-icon"><i class="bi bi-arrow-up-right-circle-fill"></i></div>
-            <h6 class="reflect-title">Next Steps</h6>
-            <p class="reflect-text">
-              My next step is to further study and simulate the transient process flows in **ASPEN HYSYS** to analyze startup behavior and feed variations. Furthermore, I aim to conduct **experimental validation** using micro-reactor tests once laboratory-scale testing begins.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
 
-<!-- ── SECTION 3: SKILLS & COMPETENCIES ─────────── -->
-<section id="skills" class="py-5">
+<!-- ── SECTION 3: SKILLS ────────────────────────── -->
+<section id="skills" class="py-5 border-top">
   <div class="container" style="max-width: 1000px;">
     <p class="label-tag mb-1">Competencies</p>
     <h2 class="section-title mb-4">Skills &amp; Tools</h2>
@@ -317,11 +148,11 @@
           <div class="skill-icon"><i class="bi bi-gear-wide-connected"></i></div>
           <h5 class="fw-600 mt-3 mb-2">Process Engineering</h5>
           <ul class="skill-list">
-            <li>Process Design &amp; Flow Analysis</li>
-            <li>Reactor Sizing (CO₂ to Methanol)</li>
-            <li>AutoCAD (Process Drafting)</li>
-            <li>Bill of Materials (BOM) Excel modeling</li>
-            <li>Material Selection</li>
+            <li>Process design &amp; flow analysis</li>
+            <li>Reactor sizing (CO₂ to methanol)</li>
+            <li>AutoCAD process drafting</li>
+            <li>Excel-based Bill of Materials (BOM)</li>
+            <li>Material selection &amp; mechanical properties</li>
           </ul>
         </div>
       </div>
@@ -332,9 +163,9 @@
           <div class="skill-icon"><i class="bi bi-bar-chart-fill"></i></div>
           <h5 class="fw-600 mt-3 mb-2">Technical &amp; Analytical</h5>
           <ul class="skill-list">
-            <li><strong>Python:</strong> Basic to intermediate data analysis and scripting.</li>
-            <li><strong>MATLAB:</strong> Full kinetic modeling final project from scratch to compile reaction rates and export graphic analysis.</li>
-            <li><strong>MS Excel:</strong> Used from semester 1 to 6 (and BRIN) for trendline calculations and analytical data processing.</li>
+            <li><strong>Python:</strong> Basic to intermediate data analysis and custom calculations.</li>
+            <li><strong>MATLAB:</strong> Coded kinetic reaction equations from scratch to generate rate profile graphs for my course final project.</li>
+            <li><strong>MS Excel:</strong> Used from semester 1 to 6 and during my BRIN internship for calculations and curve-fitting data.</li>
           </ul>
         </div>
       </div>
@@ -345,10 +176,10 @@
           <div class="skill-icon"><i class="bi bi-code-slash"></i></div>
           <h5 class="fw-600 mt-3 mb-2">Web Development</h5>
           <ul class="skill-list">
-            <li>Basic to intermediate understanding of web technologies:</li>
-            <li>HTML5</li>
-            <li>CSS3 / Bootstrap 5</li>
-            <li>JavaScript</li>
+            <li>Basic to intermediate understanding:</li>
+            <li>HTML5 for structures</li>
+            <li>CSS3 and Bootstrap 5 for layouts</li>
+            <li>JavaScript for client-side interactions</li>
           </ul>
         </div>
       </div>
@@ -359,8 +190,8 @@
           <div class="skill-icon"><i class="bi bi-droplet-fill"></i></div>
           <h5 class="fw-600 mt-3 mb-2">Chemistry Background</h5>
           <ul class="skill-list">
-            <li><strong>Academic Track:</strong> Comprehensive chemistry curriculum from semesters 1 to 6.</li>
-            <li><strong>Laboratory Assistant:</strong> Responsible for lab experiment handling, student guidance, chemical preparation, and safety protocols.</li>
+            <li><strong>Academic Study:</strong> Chemistry curriculum from semesters 1 to 6.</li>
+            <li><strong>Laboratory Assistant:</strong> Managed lab equipment setup, prepared chemical reagents, and guided students on safety protocols.</li>
           </ul>
         </div>
       </div>
@@ -368,7 +199,7 @@
   </div>
 </section>
 
-<!-- ── SECTION 4: CONTACT ME ────────────────────── -->
+<!-- ── SECTION 4: CONTACT ───────────────────────── -->
 <section id="contact" class="py-5 section-alt border-top">
   <div class="container text-center" style="max-width: 600px;">
     <p class="label-tag mb-1">Get In Touch</p>
