@@ -34,4 +34,51 @@ document.addEventListener('DOMContentLoaded', () => {
     fadels.forEach(el => fadeObs.observe(el));
   }
 
+  // Lightbox Modal Logic
+  const lightbox = document.getElementById('lightboxModal');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxCap = document.getElementById('lightboxCaption');
+  const galleryWraps = document.querySelectorAll('.gallery-wrap');
+
+  if (lightbox && lightboxImg && galleryWraps.length) {
+    galleryWraps.forEach(wrap => {
+      wrap.addEventListener('click', () => {
+        const img = wrap.querySelector('.gallery-img');
+        const cap = wrap.querySelector('.gallery-cap');
+        if (img) {
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+          if (cap) {
+            lightboxCap.textContent = cap.textContent;
+          } else {
+            lightboxCap.textContent = img.alt;
+          }
+          lightbox.style.display = 'flex';
+          setTimeout(() => {
+            lightbox.classList.add('show');
+          }, 10);
+        }
+      });
+    });
+
+    const closeLightbox = () => {
+      lightbox.classList.remove('show');
+      setTimeout(() => {
+        lightbox.style.display = 'none';
+      }, 300);
+    };
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target !== lightboxImg && e.target !== lightboxCap) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.classList.contains('show')) {
+        closeLightbox();
+      }
+    });
+  }
+
 });
