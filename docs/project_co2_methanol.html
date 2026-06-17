@@ -70,12 +70,12 @@
     <p class="img-caption">Fig. 1 — Diagram Alir Proses Sistem Reaktor (AutoCAD PFD Drawing)</p>
 
     <ul class="eng-list mt-3">
-      <li><strong>MFC Mass Flow Control:</strong> CO₂, H₂, and N₂ feed gas streams are regulated via three Mass Flow Controllers (MFC) to maintain precise stoichiometric ratios before combining at a mixing tee.</li>
-      <li><strong>Gas Conditioning:</strong> The mixed gas flows through a Guard Bed (acting as a sulfur filter packed with charcoal/alumina) and a pre-heating coil to ensure process gas uniformity prior to reactor inlet entry.</li>
-      <li><strong>Reactor Zones:</strong> Reactants enter the tubular reactor vessel containing three catalyst beds within a heated Zone ("Zona Panas") regulated by split-shell electric heating mantles (300 °C). Product effluent is cooled in a cooling Zone ("Zona Dingin") using a 50 mm pipe cooling coil to condense gaseous methanol and water.</li>
-      <li><strong>Separation &amp; Recovery:</strong> Gaseous product condensation occurs in a Cold Trap/Condenser, recovering crude liquid methanol and water.</li>
-      <li><strong>Pressure Control:</strong> Reaction pressure is regulated by a simple Back Pressure Regulator (BPR / manual needle valve) monitored by an Inlet Pressure Gage.</li>
-      <li><strong>Exhaust Gas Handling:</strong> Saturated dry gas flows through a Gas Drying Unit (monitored by a drier pressure gage), a Wet Test Meter (WTM) to track gas volume, and a GC Injection Port for gas chromatography analysis before venting.</li>
+      <li><strong>MFC Mass Flow Control:</strong> Feed streams of CO₂ (44.01 g/hr), H₂ (6.05 g/hr), and N₂ (2.80 g/hr) are controlled using three Mass Flow Controllers (MFC) to maintain a precise stoichiometric H₂:CO₂ reactant ratio of 3:1 before mixing.</li>
+      <li><strong>Gas Conditioning:</strong> The mixed gas enters the Guard Bed at 10 bar, experiencing a 0.5 bar pressure drop (outlet pressure: 9.5 bar, temperature: 23.3 °C) due to sulfur-filter packing resistance. It is then routed through a copper pre-heating coil, preheating it to the reactor inlet temperature of 250 °C (pre-heating duty: 8.35 W).</li>
+      <li><strong>Reactor Zones:</strong> Reactants enter the tubular reactor containing three catalyst beds within a "Zona Panas" heated by split-shell electric heating mantles (energy duty: 11.94 W). Molar contraction from the reaction reduces the volumetric flow from 18.80 L/hr to 11.98 L/hr. The hot product gas is then cooled to 50 °C in a "Zona Dingin" pipe cooling coil (energy duty: 21.62 W).</li>
+      <li><strong>Separation &amp; Recovery:</strong> Gaseous methanol and water are condensed in a Cold Trap/Condenser at 50 °C. Shortcut distillation separation yields pure methanol (22.14 g/hr) and wastewater (12.96 g/hr).</li>
+      <li><strong>Pressure Control:</strong> Operating pressure is maintained at 9.5 bar using a simple Back Pressure Regulator (BPR) manual needle valve.</li>
+      <li><strong>Dry Gas Analysis:</strong> Uncondensed dry gases (Gas Sisa: 17.75 g/hr) flow through a Gas Drying Unit, a Wet Test Meter (WTM) to measure flow volume, and a GC Injection Port for gas chromatography analysis before venting.</li>
     </ul>
   </section>
 
@@ -89,12 +89,13 @@
         <div class="ana-card h-100">
           <div class="ana-card-title"><i class="bi bi-bar-chart-line-fill me-2"></i>Mass Balance</div>
           <table class="ana-table">
-            <tr><td>CO₂ in</td><td class="text-end fw-600">100.0 kg/hr</td></tr>
-            <tr><td>H₂ in</td><td class="text-end fw-600">13.8 kg/hr</td></tr>
-            <tr><td>Recycle stream</td><td class="text-end fw-600">315.2 kg/hr</td></tr>
-            <tr><td>MeOH out</td><td class="text-end fw-600">72.7 kg/hr</td></tr>
-            <tr><td>H₂O out</td><td class="text-end fw-600">40.9 kg/hr</td></tr>
-            <tr class="highlight-row"><td>Carbon Conv.</td><td class="text-end fw-600">&gt; 95%</td></tr>
+            <tr><td>CO₂ Feed</td><td class="text-end fw-600">44.01 g/hr</td></tr>
+            <tr><td>H₂ Feed</td><td class="text-end fw-600">6.05 g/hr</td></tr>
+            <tr><td>N₂ Carrier</td><td class="text-end fw-600">2.80 g/hr</td></tr>
+            <tr><td>MeOH Product</td><td class="text-end fw-600">22.14 g/hr</td></tr>
+            <tr><td>Water Product</td><td class="text-end fw-600">12.96 g/hr</td></tr>
+            <tr><td>Off-Gas (Gas Sisa)</td><td class="text-end fw-600">17.75 g/hr</td></tr>
+            <tr class="highlight-row"><td>Carbon Conv.</td><td class="text-end fw-600">69.1%</td></tr>
           </table>
         </div>
       </div>
@@ -103,11 +104,12 @@
         <div class="ana-card h-100">
           <div class="ana-card-title"><i class="bi bi-wind me-2"></i>Flow Calculation</div>
           <table class="ana-table">
-            <tr><td>Q (STP)</td><td class="text-end fw-600">1,200 m³/hr</td></tr>
-            <tr><td>GHSV</td><td class="text-end fw-600">5,000 h⁻¹</td></tr>
-            <tr><td>Tube velocity</td><td class="text-end fw-600">3.2 m/s</td></tr>
-            <tr><td>ΔP (tubes)</td><td class="text-end fw-600">≤ 1.5 bar</td></tr>
-            <tr><td>HEX area</td><td class="text-end fw-600">120.0 m²</td></tr>
+            <tr><td>Q (Reactor Inlet)</td><td class="text-end fw-600">18.80 L/hr</td></tr>
+            <tr><td>Q (Reactor Outlet)</td><td class="text-end fw-600">11.98 L/hr</td></tr>
+            <tr><td>Total Mass Flow</td><td class="text-end fw-600">52.86 g/hr</td></tr>
+            <tr><td>Density (Inlet)</td><td class="text-end fw-600">2.812 kg/m³</td></tr>
+            <tr><td>Molecular Weight</td><td class="text-end fw-600">12.89 kg/kmol</td></tr>
+            <tr><td>Inlet Temperature</td><td class="text-end fw-600">250.0 °C</td></tr>
           </table>
         </div>
       </div>
@@ -116,11 +118,13 @@
         <div class="ana-card h-100">
           <div class="ana-card-title"><i class="bi bi-sliders me-2"></i>Key Parameters</div>
           <table class="ana-table">
-            <tr><td>Pressure</td><td class="text-end fw-600">75 bar</td></tr>
-            <tr><td>T inlet</td><td class="text-end fw-600">220 °C</td></tr>
-            <tr><td>T hotspot (max)</td><td class="text-end fw-600">260 °C</td></tr>
-            <tr><td>X<sub>CO₂</sub>/pass</td><td class="text-end fw-600">~25%</td></tr>
-            <tr><td>Recycle ratio R</td><td class="text-end fw-600">4.2</td></tr>
+            <tr><td>Operating P</td><td class="text-end fw-600">9.5 bar</td></tr>
+            <tr><td>Operating T</td><td class="text-end fw-600">250.0 °C</td></tr>
+            <tr><td>Pre-heating Duty</td><td class="text-end fw-600">8.35 W</td></tr>
+            <tr><td>Reactor Mantle Duty</td><td class="text-end fw-600">11.94 W</td></tr>
+            <tr><td>Product Cooler Duty</td><td class="text-end fw-600">21.62 W</td></tr>
+            <tr><td>Reboiler Duty (T-101)</td><td class="text-end fw-600">20.22 W</td></tr>
+            <tr><td>Condenser Duty (T-101)</td><td class="text-end fw-600">18.04 W</td></tr>
             <tr class="highlight-row"><td>ΔH<sub>rxn</sub></td><td class="text-end fw-600">−49.5 kJ/mol</td></tr>
           </table>
         </div>
@@ -143,7 +147,7 @@
         <table class="design-table w-100">
           <tr><th>Reactor Type</th><td>Tubular fixed-bed microreactor (continuous dual/triple-bed)</td></tr>
           <tr><th>Operating T</th><td>Room temperature to 300 °C (heated via split-shell mantles)</td></tr>
-          <tr><th>Operating P</th><td>75 bar</td></tr>
+          <tr><th>Operating P</th><td>9.5 bar (operating) &bull; design pressure rating 75 bar</td></tr>
           <tr><th>Catalyst Specs</th><td>Cu/ZnO/Al₂O₃ &bull; separated by Quartz Wool layers</td></tr>
           <tr><th>Sizing Specs</th><td>Total Length: 250 mm | Outer Diameter: 10 mm | Inner Diameter: 8 mm</td></tr>
           <tr><th>Internal Layout</th><td>Bed 1 (60 mm catalyst) | Bed 2 (60 mm catalyst) | Bed 3 (45 mm catalyst)</td></tr>
@@ -151,7 +155,7 @@
           <tr><th>Vessel Material</th><td>SS316 Stainless Steel (Swagelok compression unions)</td></tr>
         </table>
         <div class="design-rationale mt-3">
-          <strong>Design Selection Rationale:</strong> The continuous multi-bed fixed-bed design divides the catalyst mass into three distinct zones (Bed 1, 2, and 3) separated by quartz wool, allowing temperature profiles to be controlled. The choice of Swagelok compression fittings and tube reducers (10 mm to 6 mm) ensures leak-proof high-pressure operations up to 75 bar. Split-shell electric heating mantles (300 °C) provide precise heat transfer to catalyst beds, monitored by dual thermocouples (T1 &amp; T2).
+          <strong>Design Selection Rationale:</strong> The continuous multi-bed fixed-bed design divides the catalyst mass into three distinct zones (Bed 1, 2, and 3) separated by quartz wool, allowing temperature profiles to be controlled. The choice of Swagelok compression fittings and tube reducers (10 mm to 6 mm) ensures leak-proof micro-scale operations at the 9.5 bar reaction pressure while maintaining the safety margin of a 75 bar mechanical design rating. Split-shell electric heating mantles (300 °C) provide precise heat transfer to catalyst beds, monitored by dual thermocouples (T1 &amp; T2).
         </div>
       </div>
     </div>
@@ -165,9 +169,9 @@
         <div class="safety-card h-100">
           <div class="safety-card-title"><i class="bi bi-tools text-accent me-2"></i>Material Selection</div>
           <ul class="eng-list small">
-            <li><strong>SS316L (Reactor Shell &amp; Tubes):</strong> Selected for high-pressure containment (75 bar) because it offers superior resistance to hydrogen embrittlement and carbonic acid corrosion from wet CO₂.</li>
-            <li><strong>Carbon Steel A516 Gr.70 (Jacket):</strong> Selected for the outer cooling jacket shell to reduce material costs while safely containing low-pressure boiling water.</li>
-            <li><strong>SS316 clad Carbon Steel (Tube Sheets):</strong> Combines mechanical structural strength with corrosion resistance at tube joints.</li>
+            <li><strong>SS316L Tubing &amp; Fittings:</strong> Selected for reactor tubes and process lines because it provides exceptional mechanical strength under pressure and superior resistance to hydrogen embrittlement and carbonic acid corrosion from wet CO₂.</li>
+            <li><strong>Quartz Wool Bed Dividers:</strong> Installed between catalyst beds to act as high-temperature gas-permeable barriers, securing the catalyst pellets in place and preventing fluidization or channel blockages.</li>
+            <li><strong>Heating &amp; Cooling Zoning:</strong> Designed with separate heating mantles for the 250 °C catalytic reaction zone and a cooling coil for product condensation, ensuring precise temperature profiles.</li>
           </ul>
         </div>
       </div>
@@ -175,9 +179,9 @@
         <div class="safety-card h-100">
           <div class="safety-card-title"><i class="bi bi-exclamation-triangle-fill text-accent me-2"></i>Leak Prevention &amp; Safety</div>
           <ul class="eng-list small">
-            <li><strong>Double-Welded Tube Sheets:</strong> Prevents bypass leaks between high-pressure process gas inside the tubes and shell-side coolant.</li>
-            <li><strong>Thermal Expansion Bellows:</strong> Integrated on the shell to absorb stress from temperature cycles (210–260 °C) and prevent stress-corrosion cracking.</li>
-            <li><strong>Pressure Relief Valves (PRVs):</strong> Installed on the reactor inlet and separator gas output to vent pressure in case of runaway reactions or blockages.</li>
+            <li><strong>Double-Ferrule Swagelok Unions:</strong> Ensures absolute leak prevention for hazardous H₂ gas under 9.5 bar operating conditions.</li>
+            <li><strong>Thermocouple Wells:</strong> Integrated dual probe ports allow direct, localized monitoring of the catalyst bed temperature profile to prevent thermal runaway or hot-spots.</li>
+            <li><strong>Safety Valve Integration:</strong> Upstream overpressure relief system and downstream check valves prevent accidental backflow or explosive venting.</li>
           </ul>
         </div>
       </div>
@@ -233,25 +237,25 @@
         </thead>
         <tbody>
           <tr>
-            <td>1</td><td>Reactor Shell</td><td>SS316L</td><td>1</td><td>ID 1,200 mm &middot; t 45 mm &middot; L 5,500 mm</td><td>High-pressure containment (75 bar)</td>
+            <td>1</td><td>Reactor Tube</td><td>SS316L</td><td>1</td><td>OD 10 mm &middot; ID 8 mm &middot; L 250 mm</td><td>Reaction chamber containing catalyst beds</td>
           </tr>
           <tr>
-            <td>2</td><td>Catalyst Tubes</td><td>SS316L</td><td>680</td><td>OD 38 mm &middot; t 3 mm &middot; L 3,500 mm</td><td>Catalyst bed &amp; heat-transfer surface</td>
+            <td>2</td><td>Catalyst Charge</td><td>Cu/ZnO/Al₂O₃</td><td>12.5 g</td><td>Pellets crushed to ~1 mm size</td><td>CO₂ hydrogenation reaction site</td>
           </tr>
           <tr>
-            <td>3</td><td>Catalyst Charge</td><td>Cu/ZnO/Al₂O₃</td><td>1.2 T</td><td>Cylindrical 3 mm &times; 3 mm pellets</td><td>CO₂ hydrogenation reaction site</td>
+            <td>3</td><td>Bed Separators</td><td>Quartz Wool</td><td>4</td><td>High-purity fibrous silica</td><td>Catalyst bed retention &amp; zone isolation</td>
           </tr>
           <tr>
-            <td>4</td><td>Tube Sheets</td><td>CS + SS316 clad</td><td>2</td><td>Ø 1,400 mm &middot; t 80 mm</td><td>Tube bundle sealing &amp; retention</td>
+            <td>4</td><td>Heating Mantle</td><td>Split-shell ceramic</td><td>1</td><td>220V &middot; Max 300 °C &middot; L 200 mm</td><td>Hot zone temperature control</td>
           </tr>
           <tr>
-            <td>5</td><td>Cooling Jacket</td><td>A516 Gr.70 CS</td><td>1</td><td>Ø 1,500 mm &middot; insulation 50 mm</td><td>Boiling-water coolant loop</td>
+            <td>5</td><td>Cooling Coil</td><td>Copper / SS316</td><td>1</td><td>OD 6 mm tubing &middot; L 50 mm coil</td><td>Cold zone product condensation</td>
           </tr>
           <tr>
-            <td>6</td><td>Transverse Baffles</td><td>CS A36</td><td>6</td><td>Ø 1,400 mm &middot; 25% segmental cut</td><td>Shell-side flow routing &amp; support</td>
+            <td>6</td><td>Separation Trap</td><td>SS316</td><td>1</td><td>Vol 150 mL &middot; Rating 10 bar</td><td>High-pressure gas-liquid separation</td>
           </tr>
           <tr>
-            <td>7</td><td>HP Separator</td><td>SS316</td><td>1</td><td>ID 800 mm &middot; t 35 mm &middot; H 2,200 mm</td><td>Methanol condensation &amp; phase separation</td>
+            <td>7</td><td>Mass Flow Controllers</td><td>Thermal MFC</td><td>3</td><td>Calibrated for H₂, CO₂, N₂</td><td>Feed gas mixing &amp; ratio control</td>
           </tr>
         </tbody>
       </table>
