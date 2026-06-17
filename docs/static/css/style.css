@@ -569,10 +569,14 @@ body {
 .lightbox-modal img {
   max-width: 100%;
   max-height: 100%;
+  width: auto;
+  height: auto;
   border-radius: var(--radius);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
   border: 1px solid var(--border);
   background: #ffffff;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 .lightbox-caption {
   margin-top: 1.25rem;
@@ -591,10 +595,31 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+.lightbox-btn-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.75rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.45rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+.lightbox-btn-link:hover {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #ffffff;
+}
 .lightbox-close-hint {
   margin-top: 0.5rem;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.7rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }

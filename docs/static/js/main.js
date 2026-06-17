@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightbox = document.getElementById('lightboxModal');
   const lightboxImg = document.getElementById('lightboxImg');
   const lightboxCap = document.getElementById('lightboxCaption');
+  const lightboxOpenTab = document.getElementById('lightboxOpenTab');
   const galleryWraps = document.querySelectorAll('.gallery-wrap');
 
   if (lightbox && lightboxImg && galleryWraps.length) {
@@ -48,6 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (img) {
           lightboxImg.src = img.src;
           lightboxImg.alt = img.alt;
+          if (lightboxOpenTab) {
+            lightboxOpenTab.href = img.src;
+          }
           if (cap) {
             lightboxCap.textContent = cap.textContent;
           } else {
@@ -69,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     lightbox.addEventListener('click', (e) => {
-      if (e.target !== lightboxImg && e.target !== lightboxCap) {
+      if (e.target !== lightboxImg && e.target !== lightboxCap && e.target !== lightboxOpenTab) {
         closeLightbox();
       }
     });
