@@ -54,20 +54,28 @@
 
 <div class="container py-5" style="max-width:960px;">
 
+  <!-- Initial Project Description -->
+  <div class="mb-5 p-4 bg-light border-start border-primary border-3 rounded">
+    <p class="lead mb-0 text-dark" style="font-size: 1.05rem; line-height: 1.6;">
+      Spearheading an end-to-end Carbon Capture and Utilization (CCU) research initiative under the supervision of Dr. Ir. Herman Hidayat, M.Si. Developing a continuous Dual-Bed reactor system utilizing alkali metal carbonate-based adsorbents and Cu/ZnO/Al<sub>2</sub>O<sub>3</sub> catalysts to efficiently capture CO<sub>2</sub> and convert it into methanol.
+    </p>
+  </div>
+
   <!-- ── 1. PROCESS OVERVIEW ──────────────────── -->
   <section class="proj-section">
     <div class="section-label"><span>01</span> Process Overview</div>
-    <div class="img-frame">
-      <img src="static/images/flow_diagram.png" alt="PFD" class="img-fluid">
+    <div class="img-frame mb-4">
+      <img src="static/images/reactor_system_pfd.png" alt="Reactor System PFD" class="img-fluid">
     </div>
-    <p class="img-caption">Fig. 1 — Process Flow Diagram (PFD) for CO₂ Hydrogenation to Methanol drafted in AutoCAD</p>
+    <p class="img-caption">Fig. 1 — Diagram Alir Proses Sistem Reaktor (AutoCAD PFD Drawing)</p>
 
     <ul class="eng-list mt-3">
-      <li><strong>Feed Composition:</strong> The inlet feed stream consists of pure CO₂ (100 kg/hr) and H₂ (13.8 kg/hr) mixed at a 3:1 stoichiometric ratio, compressed to a system pressure of <strong>75 bar</strong>.</li>
-      <li><strong>Thermal Integration:</strong> The cold reactant gas is preheated to the reaction temperature of <strong>220 °C</strong> through a feed-effluent heat exchanger utilizing the high-temperature product stream (HEX area = 120 m²).</li>
-      <li><strong>Reaction System:</strong> Catalytic conversion takes place in a multi-tubular reactor. A dual-bed configuration with interstage cooling keeps temperatures at <strong>≤ 210 °C</strong> to sustain equilibrium conversion.</li>
-      <li><strong>Separation &amp; Recycle:</strong> Crude liquid methanol (~64 wt% purity) is separated in a high-pressure flash separator. Unreacted gases are redirected through a recycle loop at a recycle ratio of <strong>R = 4.2</strong>.</li>
-      <li><strong>Overall carbon utilization:</strong> Over <strong>95%</strong> carbon conversion is achieved through closed recycle loop integration.</li>
+      <li><strong>MFC Mass Flow Control:</strong> CO₂, H₂, and N₂ feed gas streams are regulated via three Mass Flow Controllers (MFC) to maintain precise stoichiometric ratios before combining at a mixing tee.</li>
+      <li><strong>Gas Conditioning:</strong> The mixed gas flows through a Guard Bed (acting as a sulfur filter packed with charcoal/alumina) and a pre-heating coil to ensure process gas uniformity prior to reactor inlet entry.</li>
+      <li><strong>Reactor Zones:</strong> Reactants enter the tubular reactor vessel containing three catalyst beds within a heated Zone ("Zona Panas") regulated by split-shell electric heating mantles (300 °C). Product effluent is cooled in a cooling Zone ("Zona Dingin") using a 50 mm pipe cooling coil to condense gaseous methanol and water.</li>
+      <li><strong>Separation &amp; Recovery:</strong> Gaseous product condensation occurs in a Cold Trap/Condenser, recovering crude liquid methanol and water.</li>
+      <li><strong>Pressure Control:</strong> Reaction pressure is regulated by a simple Back Pressure Regulator (BPR / manual needle valve) monitored by an Inlet Pressure Gage.</li>
+      <li><strong>Exhaust Gas Handling:</strong> Saturated dry gas flows through a Gas Drying Unit (monitored by a drier pressure gage), a Wet Test Meter (WTM) to track gas volume, and a GC Injection Port for gas chromatography analysis before venting.</li>
     </ul>
   </section>
 
@@ -126,24 +134,24 @@
 
     <div class="row g-4 align-items-start">
       <div class="col-md-5">
-        <div class="img-frame">
-          <img src="static/images/reactor_design.png" alt="AutoCAD Reactor" class="img-fluid">
+        <div class="img-frame mb-2">
+          <img src="static/images/reactor_internal_layout.png" alt="Reactor Internal Layout" class="img-fluid">
         </div>
-        <p class="img-caption">Fig. 2 — AutoCAD Cross-Section: Dual-Bed Tubular Reactor Vessel</p>
+        <p class="img-caption">Fig. 2 — Susunan Internal Reaktor (Reactor Internal Layout Drawing)</p>
       </div>
       <div class="col-md-7">
         <table class="design-table w-100">
-          <tr><th>Reactor Type</th><td>Dual-Bed Fixed Bed Tubular (Shell-and-Tube)</td></tr>
-          <tr><th>Operating T</th><td>210–250 °C &bull; interstage cooling ≤ 210 °C</td></tr>
+          <tr><th>Reactor Type</th><td>Tubular fixed-bed microreactor (continuous dual/triple-bed)</td></tr>
+          <tr><th>Operating T</th><td>Room temperature to 300 °C (heated via split-shell mantles)</td></tr>
           <tr><th>Operating P</th><td>75 bar</td></tr>
-          <tr><th>Catalyst</th><td>Cu/ZnO/Al₂O₃ &bull; pellets 3 mm × 3 mm</td></tr>
-          <tr><th>No. of Tubes</th><td>680 tubes &bull; OD 38 mm &bull; L 3.5 m</td></tr>
-          <tr><th>Shell ID</th><td>1,200 mm &bull; wall thickness 45 mm</td></tr>
-          <tr><th>Catalyst load</th><td>1.2 T total charge</td></tr>
-          <tr><th>Shell material</th><td>SS316L (75 bar ASME service)</td></tr>
+          <tr><th>Catalyst Specs</th><td>Cu/ZnO/Al₂O₃ &bull; separated by Quartz Wool layers</td></tr>
+          <tr><th>Sizing Specs</th><td>Total Length: 250 mm | Outer Diameter: 10 mm | Inner Diameter: 8 mm</td></tr>
+          <tr><th>Internal Layout</th><td>Bed 1 (60 mm catalyst) | Bed 2 (60 mm catalyst) | Bed 3 (45 mm catalyst)</td></tr>
+          <tr><th>Cooling System</th><td>50 mm pipe cooling coil (outlet connection to OD 6 mm)</td></tr>
+          <tr><th>Vessel Material</th><td>SS316 Stainless Steel (Swagelok compression unions)</td></tr>
         </table>
         <div class="design-rationale mt-3">
-          <strong>Design Selection Rationale:</strong> A multi-tubular configuration was selected to maximize the heat-transfer surface area, allowing efficient removal of the reaction heat (ΔH = −49.5 kJ/mol) via boiling water on the shell side. A dual-bed system with interstage cooling is utilized to prevent catalyst sintering (which occurs above 280 °C) and bypass thermodynamic equilibrium limitations to increase conversion.
+          <strong>Design Selection Rationale:</strong> The continuous multi-bed fixed-bed design divides the catalyst mass into three distinct zones (Bed 1, 2, and 3) separated by quartz wool, allowing temperature profiles to be controlled. The choice of Swagelok compression fittings and tube reducers (10 mm to 6 mm) ensures leak-proof high-pressure operations up to 75 bar. Split-shell electric heating mantles (300 °C) provide precise heat transfer to catalyst beds, monitored by dual thermocouples (T1 &amp; T2).
         </div>
       </div>
     </div>
@@ -180,22 +188,34 @@
   <section class="proj-section">
     <div class="section-label"><span>05</span> CAD &amp; Engineering Drawings</div>
     <div class="row g-3">
-      <div class="col-md-4">
+      <div class="col-md-6 col-lg-4">
         <div class="gallery-wrap">
-          <img src="static/images/flow_diagram.png" alt="PFD" class="gallery-img">
-          <div class="gallery-cap">AutoCAD — Process Flow Diagram</div>
+          <img src="static/images/reactor_system_pfd.png" alt="PFD" class="gallery-img">
+          <div class="gallery-cap">AutoCAD — Reactor System PFD</div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6 col-lg-4">
         <div class="gallery-wrap">
-          <img src="static/images/reactor_design.png" alt="Reactor Design" class="gallery-img">
-          <div class="gallery-cap">AutoCAD — Reactor Vessel Design</div>
+          <img src="static/images/reactor_internal_layout.png" alt="Reactor Design" class="gallery-img">
+          <div class="gallery-cap">AutoCAD — Reactor Internal Layout</div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6 col-lg-4">
         <div class="gallery-wrap">
-          <img src="static/images/aspen_simulation.png" alt="ASPEN Simulation" class="gallery-img">
-          <div class="gallery-cap">ASPEN HYSYS — Simulation Flow Model</div>
+          <img src="static/images/reactor_tubing_spec.png" alt="Tubing Spec" class="gallery-img">
+          <div class="gallery-cap">AutoCAD — Tubing &amp; Fittings Specs</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <div class="gallery-wrap">
+          <img src="static/images/reactor_connection_detail.png" alt="Connection Detail" class="gallery-img">
+          <div class="gallery-cap">AutoCAD — Reducer Connection Details</div>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-6">
+        <div class="gallery-wrap">
+          <img src="static/images/aspen_simulation_detail.png" alt="ASPEN Simulation" class="gallery-img">
+          <div class="gallery-cap">ASPEN HYSYS — Plant Simulation Model</div>
         </div>
       </div>
     </div>

@@ -116,9 +116,15 @@ body {
   margin-bottom: .4rem;
 }
 .hero-sub {
-  font-size: 1.05rem;
+  font-size: 1.08rem;
+  color: var(--accent);
+  font-weight: 600;
+  font-family: var(--font-heading);
+}
+.hero-sub-detail {
+  font-size: 0.95rem;
   color: var(--txt-muted);
-  font-weight: 400;
+  line-height: 1.6;
 }
 .bio {
   color: var(--txt-muted);
