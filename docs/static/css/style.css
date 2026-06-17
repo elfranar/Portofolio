@@ -679,3 +679,21 @@ body {
   .spec-divider    { display: none; }
   .meta-cell       { border-right: none; border-bottom: 1px solid var(--border); }
 }
+
+/* ── Custom Skill Blocks ───────────────────────── */
+.skill-block {
+  text-align: left;
+}
+.skill-sub-heading {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--txt);
+}
+.skill-block-text {
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: var(--txt-muted);
+}
+
