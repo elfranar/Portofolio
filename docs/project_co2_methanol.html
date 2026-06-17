@@ -85,7 +85,7 @@
 
     <div class="row g-3">
       <!-- Mass balance -->
-      <div class="col-md-4">
+      <div class="col-md-6 col-lg-3">
         <div class="ana-card h-100">
           <div class="ana-card-title"><i class="bi bi-bar-chart-line-fill me-2"></i>Mass Balance</div>
           <table class="ana-table">
@@ -95,17 +95,18 @@
             <tr><td>MeOH Product</td><td class="text-end fw-600">22.14 g/hr</td></tr>
             <tr><td>Water Product</td><td class="text-end fw-600">12.96 g/hr</td></tr>
             <tr><td>Off-Gas (Gas Sisa)</td><td class="text-end fw-600">17.75 g/hr</td></tr>
-            <tr class="highlight-row"><td>Carbon Conv.</td><td class="text-end fw-600">69.1%</td></tr>
+            <tr class="highlight-row"><td>Carbon Conv.</td><td class="text-end fw-600">72.39%</td></tr>
           </table>
         </div>
       </div>
       <!-- Flow calc -->
-      <div class="col-md-4">
+      <div class="col-md-6 col-lg-3">
         <div class="ana-card h-100">
           <div class="ana-card-title"><i class="bi bi-wind me-2"></i>Flow Calculation</div>
           <table class="ana-table">
             <tr><td>Q (Reactor Inlet)</td><td class="text-end fw-600">18.80 L/hr</td></tr>
             <tr><td>Q (Reactor Outlet)</td><td class="text-end fw-600">11.98 L/hr</td></tr>
+            <tr><td>Residence Time</td><td class="text-end fw-600">1.59 s</td></tr>
             <tr><td>Total Mass Flow</td><td class="text-end fw-600">52.86 g/hr</td></tr>
             <tr><td>Density (Inlet)</td><td class="text-end fw-600">2.812 kg/m³</td></tr>
             <tr><td>Molecular Weight</td><td class="text-end fw-600">12.89 kg/kmol</td></tr>
@@ -114,18 +115,32 @@
         </div>
       </div>
       <!-- Key parameters -->
-      <div class="col-md-4">
+      <div class="col-md-6 col-lg-3">
         <div class="ana-card h-100">
           <div class="ana-card-title"><i class="bi bi-sliders me-2"></i>Key Parameters</div>
           <table class="ana-table">
             <tr><td>Operating P</td><td class="text-end fw-600">9.5 bar</td></tr>
             <tr><td>Operating T</td><td class="text-end fw-600">250.0 °C</td></tr>
             <tr><td>Pre-heating Duty</td><td class="text-end fw-600">8.35 W</td></tr>
-            <tr><td>Reactor Mantle Duty</td><td class="text-end fw-600">11.94 W</td></tr>
+            <tr><td>Reactor Heat Load</td><td class="text-end fw-600">−11.94 W</td></tr>
             <tr><td>Product Cooler Duty</td><td class="text-end fw-600">21.62 W</td></tr>
-            <tr><td>Reboiler Duty (T-101)</td><td class="text-end fw-600">20.22 W</td></tr>
-            <tr><td>Condenser Duty (T-101)</td><td class="text-end fw-600">18.04 W</td></tr>
             <tr class="highlight-row"><td>ΔH<sub>rxn</sub></td><td class="text-end fw-600">−49.5 kJ/mol</td></tr>
+          </table>
+        </div>
+      </div>
+      <!-- Distillation Spec -->
+      <div class="col-md-6 col-lg-3">
+        <div class="ana-card h-100">
+          <div class="ana-card-title"><i class="bi bi-filter-circle me-2"></i>Separation (T-101)</div>
+          <table class="ana-table">
+            <tr><td>Column Type</td><td class="text-end fw-600">Shortcut</td></tr>
+            <tr><td>Reflux Ratio</td><td class="text-end fw-600">1.50 (Min: 0.58)</td></tr>
+            <tr><td>Actual Stages</td><td class="text-end fw-600">9.81 (~10)</td></tr>
+            <tr><td>Optimal Feed Stage</td><td class="text-end fw-600">4.86 (~5)</td></tr>
+            <tr><td>Reboiler Duty</td><td class="text-end fw-600">20.22 W</td></tr>
+            <tr><td>Condenser Duty</td><td class="text-end fw-600">18.04 W</td></tr>
+            <tr><td>Est. Diameter</td><td class="text-end fw-600">2.02 mm</td></tr>
+            <tr><td>Est. Height</td><td class="text-end fw-600">5.91 m</td></tr>
           </table>
         </div>
       </div>
